@@ -1,1 +1,0 @@
-# WSNET_STARTER
