@@ -13,7 +13,8 @@ createServer({ port }, async client => {
         //check if the user is auth
         if (auth(data)) {
             //set the user to the sended username
-            user = data.u
+            if (!user)
+                user = data.u
             //return sucsess
             return true;
         }
