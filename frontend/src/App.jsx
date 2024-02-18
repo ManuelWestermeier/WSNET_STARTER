@@ -8,9 +8,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
       <Route path="profile/login" element={<Login />} />
       <Route path="profile/logout" element={<Logout />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
