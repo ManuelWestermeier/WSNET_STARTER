@@ -66,7 +66,7 @@ function createUser(name) {
 }
 //securify paths
 function securifyPath(str) {
-    return (str + "").split("/").join("_").split(".").join("_");
+    return (str + "").split("/").join("_").split("\\").join("_");
 }
 
 process.on("uncaughtException", err => log(err))
